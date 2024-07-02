@@ -361,7 +361,6 @@ public class Arbol {
         }
     }
 
-    //buscar min
     private Nodo buscarMin(Nodo r) {
         for (; r.getIzq() != null; r = r.getIzq());
         return (r);
@@ -380,7 +379,7 @@ public class Arbol {
             preOrden(reco.getDer(),l);
         }
     }
-    //imprimir InOrden
+    
     public ArrayList inOrden() {
         ArrayList l=new ArrayList();
         inOrden(raiz,l);
@@ -395,7 +394,6 @@ public class Arbol {
         }
     }
 
-//imprimir post orden
     public ArrayList postOrden() {
         ArrayList l=new ArrayList();
         postOrden(raiz,l);
@@ -410,7 +408,6 @@ public class Arbol {
         }
     }
     
-    //con nivel
        public ArrayList impNiveles() {
         ArrayList l=new ArrayList();
         impNiveles(raiz, 1,l);
@@ -425,7 +422,6 @@ public class Arbol {
         }
     }
     
-    //hojas
     public ArrayList getHojas() {
         ArrayList l = new ArrayList();
         getHojas(this.raiz, l);
@@ -445,7 +441,6 @@ public class Arbol {
     protected boolean esHoja(Nodo x) {
         return (x != null && x.getIzq() == null && x.getDer() == null);
     }
-    
     
     public int padre(int info) {
         if (info == 0 || this.raiz == null) {
@@ -473,7 +468,6 @@ public class Arbol {
         }
     }
     
-    //eliminar hojas
      public void podar() {
         podar(this.raiz);
     }
@@ -492,10 +486,6 @@ public class Arbol {
         podar(x.getDer());
     }
    
-    
-    
-    
-    //dibujar arbol
      public JPanel getdibujo() {
         return new ArbolExpresionGrafico(this);
     }
