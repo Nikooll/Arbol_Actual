@@ -22,14 +22,6 @@ public class ArbolExpresionGrafico extends JPanel
     private Dimension empty = new Dimension(0,0);
     private FontMetrics fm = null;
     
-    
-    /**
-     * Constructor de la clase ArbolExpresionGrafico.
-     * El constructor permite inicializar los atributos de la clase ArbolExpresionGrafico
-     * y llama al método repaint(), que es el encargado de pintar el Arbol.
-     * @param miExpresion: dato de tipo ArbolExpresion que contiene el Arbol a
-     * dibujar.
-     */
     public ArbolExpresionGrafico(Arbol miArbol) 
     {
           this.miArbol = miArbol;
@@ -41,11 +33,7 @@ public class ArbolExpresionGrafico extends JPanel
     }
 
 
-    /**
-     * Calcula las posiciones de los respectivos subárboles y de cada nodo que 
-     * forma parte de ese subárbol, para conocer en que posición van a ir dibujados
-     * los rectángulos representativos del árbol de la expresión.
-     */
+   
     private void calcularPosiciones() 
     {
          posicionNodos.clear();
@@ -58,14 +46,7 @@ public class ArbolExpresionGrafico extends JPanel
          }
     }
     
-    /**
-     * Calcula el tamaño de cada subárbol y lo agrega al objeto subtreeSizes de la clase
-     * de tipo HashMap que va a contener la coleccion de todos los 
-     * subárboles que contiene un arbol.
-     * @param n:Objeto de la clase NodoB <T> que se utiliza como
-     * referencia calcular el tamaño de cada subárbol.
-     * @return Dimension con el tamaño de cada subárbol.
-     */
+ 
     private Dimension calcularTamañoSubarbol(Nodo n) 
     {
           if (n == null) 
@@ -130,6 +111,7 @@ public class ArbolExpresionGrafico extends JPanel
      * @param puntoy: int con la posición en y desde donde se va a dibujar la línea hasta el siguiente hijo.
      * @param yoffs: int con la altura del FontMetrics.
      */
+    
     private void dibujarArbol(Graphics2D g, Nodo n, int puntox, int puntoy, int yoffs) 
     {
      if (n == null) 
