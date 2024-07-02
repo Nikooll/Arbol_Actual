@@ -17,7 +17,6 @@ public class Arbol {
     int cant;
     int altura;
 
-   
 
     public Nodo getRaiz() {
         return this.raiz;

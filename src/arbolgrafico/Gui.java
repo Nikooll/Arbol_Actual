@@ -133,7 +133,7 @@ public class Gui extends javax.swing.JFrame {
 
         cmdBuscar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmdBuscar.setText("Buscar");
-        cmdBuscar.setBorder(null);
+        cmdBuscar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         cmdBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdBuscarActionPerformed(evt);
