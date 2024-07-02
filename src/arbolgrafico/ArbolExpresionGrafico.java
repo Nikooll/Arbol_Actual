@@ -148,11 +148,6 @@ public class ArbolExpresionGrafico extends JPanel
      
    }
     
-
-   /**
-     * Sobreescribe el metodo paint y se encarga de pintar todo el árbol.
-     * @param g: Objeto de la clase Graphics.
-     */
    public void paint(Graphics g) 
    {
          super.paint(g);
