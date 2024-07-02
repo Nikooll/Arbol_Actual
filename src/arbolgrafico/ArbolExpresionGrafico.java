@@ -64,17 +64,6 @@ public class ArbolExpresionGrafico extends JPanel
           return d;
     }
     
-    
-    /**
-     * Calcula la ubicación de cada nodo de cada subárbol y agrega cada nodo con 
-     * un objeto de tipo Rectangule que tiene la ubicación y la información específica de dónde 
-     * va a ser dibujado.
-     * @param n: Objeto de tipo NodoB <T> que se utiliza como
-     * referencia para calcular la ubicación de cada nodo.
-     * @param left: int con alineación y orientación a la izquierda.
-     * @param right: int con alineación y orientación a la derecha.
-     * @param top: int con el tope.
-     */
     private void calcularPosicion(Nodo n, int left, int right, int top) 
     {
       if (n == null) 
@@ -102,16 +91,7 @@ public class ArbolExpresionGrafico extends JPanel
       calcularPosicion(n.getDer(), center + child2child/2, Integer.MAX_VALUE, top + fm.getHeight() + parent2child);
     }
     
-    /**
-     * Dibuja el árbol teniendo en cuenta las ubicaciones de los nodos y los 
-     * subárboles calculadas anteriormente.
-     * @param g: Objeto de la clase Graphics2D que permite realizar el dibujo de las líneas, rectangulos y del String de la información que contiene el Nodo.
-     * @param n: Objeto de la clase NodoB <T> que se utiliza como referencia para dibujar el árbol.
-     * @param puntox: int con la posición en x desde donde se va a dibujar la línea hasta el siguiente hijo.
-     * @param puntoy: int con la posición en y desde donde se va a dibujar la línea hasta el siguiente hijo.
-     * @param yoffs: int con la altura del FontMetrics.
-     */
-    
+
     private void dibujarArbol(Graphics2D g, Nodo n, int puntox, int puntoy, int yoffs) 
     {
      if (n == null) 

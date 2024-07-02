@@ -6,12 +6,6 @@ import java.util.List;
 import javax.swing.JPanel;
 
 
-
-
-/**
- *
- * 
- */
 public class Arbol {
 
     private Nodo raiz;
@@ -127,7 +121,7 @@ public class Arbol {
         return ("" + reco.getDato());
     }
     
-    //Balance
+    
     int subizq = 0;
     int subder = 0;
 
@@ -136,7 +130,7 @@ public class Arbol {
          subder = 0;
 
         Balance(this.raiz, true, 0);
-        //System.out.println("lado Izquierdo " + subizq + " Lado Derecho " + subder);
+      
         if (subizq - subder == 0) {
             return ("El balance es: 0 ");
         } else if (subizq - subder == -1) {
@@ -321,11 +315,7 @@ public class Arbol {
         } else {
             System.out.println("Encontro el dato:" + x);
             if (r.getIzq() != null && r.getDer() != null) {
-                /*
-                 *	Buscar el menor de los derechos y lo intercambia por el dato
-                 *	que desea borrar. La idea del algoritmo es que el dato a borrar 
-                 *	se coloque en una hoja o en un nodo que no tenga una de sus ramas.
-                 **/
+               
                 Nodo cambiar = buscarMin(r.getDer());
                 int aux = cambiar.getDato();
                 cambiar.setDato(r.getDato());
