@@ -57,6 +57,7 @@ public class Arbol {
         return ""+cant;
     }
 
+    
     private void cantidadNodos(Nodo reco) {
         if (reco != null) {
             cant++;
@@ -65,7 +66,6 @@ public class Arbol {
         }
     }
     
-    //cantidad nodos hoja
     
     public String cantidadNodosHoja() {
         cant = 0;
