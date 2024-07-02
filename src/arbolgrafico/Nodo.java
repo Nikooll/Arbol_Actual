@@ -3,7 +3,7 @@ package arbolgrafico;
 
 /**
  *
- * @author ploks
+ * @author Nikooll
  */
 public class Nodo {
     

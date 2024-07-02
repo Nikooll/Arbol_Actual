@@ -470,6 +470,7 @@ public class Gui extends javax.swing.JFrame {
         complementos();
     }//GEN-LAST:event_botonPodarActionPerformed
 
+    
     private void botonBalanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonBalanceActionPerformed
         this.impresion.setText("");
        

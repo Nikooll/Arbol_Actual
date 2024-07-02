@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JPanel;
 
-
 public class Arbol {
 
     private Nodo raiz;
@@ -24,12 +23,14 @@ public class Arbol {
         this.raiz = null;
     }
 
+    
     public boolean agregar(int dato) {
         Nodo nuevo = new Nodo(dato, null, null);
         insertar(nuevo, raiz);
         return true;
     }
 
+    
     public void insertar(Nodo nuevo, Nodo pivote) {
         if (this.raiz == null) {
             raiz = nuevo;
@@ -480,3 +481,4 @@ public class Arbol {
         return new ArbolExpresionGrafico(this);
     }
 }
+

@@ -10,8 +10,6 @@ import java.awt.*;
 import java.util.*;
 import javax.swing.*;
 
-
-
 public class ArbolExpresionGrafico extends JPanel 
 {
     private Arbol miArbol;

@@ -10,7 +10,6 @@ import javax.swing.JPanel;
  */
 public class SimuladorArbolBinario {
 
-
     Arbol miArbol = new Arbol();
 
     public SimuladorArbolBinario() {
@@ -120,7 +119,6 @@ public class SimuladorArbolBinario {
         return (recorrido(it, "Rama(s) con mas valores"));
     }
     
-
     public void podarArbol() {
         this.miArbol.podar();
     }
@@ -129,3 +127,6 @@ public class SimuladorArbolBinario {
         return this.miArbol.getdibujo();
     }
 }
+
+
+
