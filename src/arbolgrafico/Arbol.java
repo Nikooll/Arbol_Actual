@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 
 
 
+
 /**
  *
  * @author ploks
@@ -16,7 +17,6 @@ public class Arbol {
     private Nodo raiz;
     int cant;
     int altura;
-
 
     public Nodo getRaiz() {
         return this.raiz;
