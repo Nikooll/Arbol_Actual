@@ -6,10 +6,11 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ploks
+ * 
  */
 public class SimuladorArbolBinario {
 
+    
     Arbol miArbol = new Arbol();
 
     public SimuladorArbolBinario() {

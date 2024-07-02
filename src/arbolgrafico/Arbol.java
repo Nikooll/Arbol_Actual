@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ploks
+ * 
  */
 public class Arbol {
 
